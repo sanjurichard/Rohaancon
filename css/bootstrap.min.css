@@ -785,7 +785,7 @@ progress {
 
 .col-6 {
     flex: 0 0 auto;
-    width: 50%
+    width: 100%
 }
 
 .col-7 {
@@ -1422,7 +1422,7 @@ progress {
 
     .col-lg-6 {
         flex: 0 0 auto;
-        width: 50%
+        width: 28%
     }
 
     .col-lg-7 {
