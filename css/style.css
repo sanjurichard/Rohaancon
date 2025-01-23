@@ -522,7 +522,7 @@
 }
 
 .categories-carousel .owl-stage-outer {
-    margin-top: 65px;
+    margin-top: 15px;
     margin-right: -1px;
 }
 
@@ -1018,13 +1018,13 @@ iframe {
 .section-custom h2 {
     margin: 0 0 10px;
     font-size: 18px;
-    color: #333;
+    color: #4b4a4a;
 }
 
 .section-custom p {
     margin: 0;
     line-height: 1.6;
-    font-size: 14px;
+    font-size: 17px;
     color: #666;
 }
 
@@ -1128,6 +1128,7 @@ iframe {
     align-items: flex-start;
     justify-content: center;
     gap: 20px;
+    margin-top: 40px;
   }
   
   .image-grid {
@@ -1486,7 +1487,7 @@ iframe {
     }
 
     .section-custom p {
-        font-size: 0.95rem;
+        font-size: 0.55rem;
     }
 }
 
@@ -1677,3 +1678,70 @@ iframe {
   .mobile-image {
     display: none;
   }
+  
+
+  .header-carousel {
+    position: relative; /* For positioning icons on top of the carousel */
+  }
+  
+  .contact-icons {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    right: 0; /* Align to the right */
+    transform: translateY(-50%); /* Adjust for perfect centering */
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* Space between phone and WhatsApp links */
+    z-index: 10; /* Ensure visibility over carousel */
+  }
+  
+  .contact-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px; /* Font size for phone number */
+    writing-mode: vertical-rl; 
+    color: white; /* White text color */
+    padding: 10px;
+    border-radius: 5px; /* Slightly rounded corners */
+    text-decoration: none; /* Remove underline */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow effect */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth hover */
+  }
+  
+  .contact-icons a:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+  }
+  
+  .phone-icon {
+    background-color: #007bff; /* Blue for phone number */
+  }
+  
+  .whatsapp-icon img {
+    width: 50px; /* Adjust the size of WhatsApp icon */
+    height: 50px;
+    border-radius: 50%; /* Make the image circular */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow */
+  }
+  
+  .whatsapp-icon:hover img {
+    transform: scale(1.1); /* Slightly enlarge WhatsApp icon on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .contact-icons {
+      top: 20%; /* Adjust placement for smaller screens */
+      right: 10px;
+    }
+  
+    .contact-icons a {
+      font-size: 12px; /* Reduce font size */
+      padding: 8px; /* Smaller padding */
+    }
+  
+    .whatsapp-icon img {
+      width: 45px; /* Smaller WhatsApp icon */
+      height: 45px;
+    }
+  }
+  

@@ -46,8 +46,8 @@
 body {
     margin: 0;
     font-family: "Lato", sans-serif;
-    font-size: 1rem;
-    font-weight: 400;
+    font-size: 1.1rem;
+    font-weight: 300;
     line-height: 1.5;
     color: #6e7684;
     overflow-x: hidden;
@@ -8064,8 +8064,8 @@ fieldset:disabled .btn {
 }
 
 .py-5 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important
 }
 
 .pt-0 {
@@ -8137,7 +8137,7 @@ fieldset:disabled .btn {
 }
 
 .pb-5 {
-    padding-bottom: 3rem !important
+    padding-bottom: 0rem !important
 }
 
 .ps-0 {
