@@ -1668,3 +1668,12 @@ iframe {
       height: auto;
     }
   }
+
+  /* Default: Desktop Image is visible, Mobile Image is hidden */
+.desktop-image {
+    display: block;
+  }
+  
+  .mobile-image {
+    display: none;
+  }
