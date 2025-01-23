@@ -1655,3 +1655,16 @@ iframe {
     }
   }
   
+
+  /* For mobile screens: Show Mobile Image and hide Desktop Image */
+@media (max-width: 768px) {
+    .desktop-image {
+      display: none;
+    }
+  
+    .mobile-image {
+      display: block;
+      max-width: 100%; /* Ensure the mobile image fits the screen */
+      height: auto;
+    }
+  }
