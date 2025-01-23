@@ -1623,7 +1623,7 @@ progress {
     .col-xl-3 {
         flex: 0 0 auto;
         width: 25%;
-        color: white;
+        color: rgb(0, 0, 0);
     }
 
     .col-xl-4 {
@@ -8319,7 +8319,7 @@ fieldset:disabled .btn {
 }
 
 .text-white {
-    color: #fff !important
+    color: #050505 !important
 }
 .text-white1 {
     color: #000610 !important
