@@ -1009,8 +1009,8 @@ iframe {
 }
 
 .section-custom img {
-    width: 150px;
-    height: 100px;
+    width: 210px;
+    height: 175px;
     object-fit: cover;
     border-radius: 5px;
 }
@@ -1657,28 +1657,32 @@ iframe {
   }
   
 
-  /* For mobile screens: Show Mobile Image and hide Desktop Image */
-@media (max-width: 768px) {
-    .desktop-image {
-      display: none;
-    }
-  
-    .mobile-image {
-      display: block;
-      max-width: 100%; /* Ensure the mobile image fits the screen */
-      height: auto;
-    }
-  }
+  .director-banner {
+    display: block; /* Default display for desktop */
+    width: 100%;
+    height: auto;
+}
 
-  /* Default: Desktop Image is visible, Mobile Image is hidden */
-.desktop-image {
-    display: block;
-  }
+.mobile-image {
+    display: none; /* Hide the mobile image by default */
+    width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .director-banner {
+        display: none; /* Hide the desktop image on smaller screens */
+    }
+
+    .mobile-image {
+        display: block; /* Show the mobile image for small screens */
+    }
+}
+
   
-  .mobile-image {
-    display: none;
-  }
-  
+
+
+
 
   .header-carousel {
     position: relative; /* For positioning icons on top of the carousel */
