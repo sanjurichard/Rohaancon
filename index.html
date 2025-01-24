@@ -43,16 +43,20 @@
             const increment = Math.ceil(target / 1000); // Adjust speed by dividing target
 
             if (current < target) {
-                counter.innerText = current + increment; // Update number
+                counter.innerText = (current + increment).toLocaleString(); // Format number with commas
                 setTimeout(updateCount, 20); // Recursive call for smooth animation
             } else {
-                counter.innerText = target; // Ensure target is the final number
+                counter.innerText = target.toLocaleString(); // Ensure target is the final number
+
+                // Add the plus symbol (+) to every number
+                counter.innerText = counter.innerText + "+"; // Append the plus symbol
             }
         };
 
         updateCount(); // Start counting
     });
 });
+
 
 </script>
 <body>
@@ -231,7 +235,7 @@
         <div class="numbers-container">
             <div class="number-box">
                 <img src="img/excavator-Traced.png" alt="Icon">
-                <h3 class="count" data-target="200">0</h3>
+                <h3 class="count" data-target="200000">0</h3>
                 <p>Build Area Sq.ft</p>
             </div>
             <div class="number-box">
@@ -249,6 +253,7 @@
                 <h3 class="count" data-target="25">0</h3>
                 <p>Locations</p>
             </div>
+            
         </div>
         <div class="form-container">
             <h2>Talk to an Expert</h2>
@@ -277,6 +282,7 @@
 
                 </p>
             </div>
+            <br>
             <div class="categories-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
                 <div class="categories-item p-4">
                     <div class="categories-item-inner">
@@ -500,7 +506,7 @@
             </div>
         </div> -->
     <!-- Features End -->
-
+<br>
     <!-- About Start -->
     <div class="container-fluid overflow-hidden about py-5">
         <div class="container py-5">
