@@ -1269,15 +1269,68 @@ iframe {
   }
   
   
+  @media only screen and (max-width: 768px) {
+    .why-choose-section {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .why-choose-section h1 {
+        font-size: 1.5rem; /* Adjust the heading size */
+        margin-bottom: 15px;
+    }
+
+    .content-container {
+        display: flex;
+        flex-direction: column; /* Stack content vertically */
+        gap: 20px;
+    }
+
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+        gap: 10px;
+    }
+
+    .image-grid img {
+        width: 100%;
+        /* height: auto; */
+        border-radius: 5px; /* Optional for rounded corners */
+    }
+
+    .text-content {
+        text-align: left; /* Align text to the left for readability */
+        font-size: 1rem;
+    }
+
+    .text-content h4 {
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+    }
+
+    .text-content h2 {
+        font-size: 1.4rem;
+        margin: 15px 0;
+    }
+
+    .text-content p {
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+}
+
+
+
+
 
   .director-message-section {
     text-align: center;
     padding: 20px;
-    background-color: #f0f0f0; /* Optional background to match your design */
+    /* background-color: #f0f0f0;  */
   }
   
   .director-banner {
-    max-width: 100%;
+    max-width: 120%;
     height: auto;
     display: inline-block;
     border-radius: 8px; /* Optional for rounded corners */
@@ -1547,13 +1600,13 @@ iframe {
         width: 100%;
         height: auto;
         border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
     }
 }
 
 @media (max-width: 768px) {
     .display-5 {
-        font-size: 1.75rem; /* Slightly smaller font for mobile */
+        font-size: 1.5rem; /* Slightly smaller font for mobile */
     }
 
     .partners-banner {
@@ -1807,7 +1860,8 @@ iframe {
 
   .director-banner {
     display: block; /* Default display for desktop */
-    width: 100%;
+    width: 112%;
+    margin-left: -78px;
     height: auto;
 }
 
