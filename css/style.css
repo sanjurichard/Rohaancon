@@ -382,7 +382,7 @@
 
 .about .about-img .img-1 {
     height: 70%;
-    margin-right: 50px;
+    /* margin-right: 50px; */
 }
 
 .about .about-img .img-2 {
@@ -967,7 +967,7 @@
 }
 
 .description-custom {
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: 500;
     margin-bottom: 40px;
 }
@@ -1013,7 +1013,7 @@ iframe {
 .container-custom {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 8px;
     background-color: #ffffff;
     padding: 30px;
     border-radius: 10px;
@@ -1045,6 +1045,7 @@ iframe {
 .section-custom p {
     margin: 0;
     line-height: 1.6;
+    font-weight: 500;
     font-size: 17px;
     color: #666;
 }
@@ -1116,15 +1117,15 @@ iframe {
   text-align: center;
   padding: 20px;
   background-color: #fff; /* Matches the white background in your image */
-  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2), 
-              0 -3px 10px rgba(0, 0, 0, 0.1), 
-              -3px 4px 10px rgba(0, 0, 0, 0.1), 
-              3px 4px 10px rgba(0, 0, 0, 0.1); /* Shadow from all sides */
+  /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 
+              0 -1px 5px rgba(0, 0, 0, 0.1), 
+              -1px 4px 5px rgba(0, 0, 0, 0.1), 
+              1px 4px 10px rgba(0, 0, 0, 0.1);  */
   border-radius: 10px; /* Optional rounded corners */
 }
 
 .partners-banner {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   display: inline-block;
 }
@@ -1264,6 +1265,7 @@ iframe {
   
   .unique-quote-info-description {
     color: #555;
+    font-weight: 500;
   }
   
   
@@ -1419,7 +1421,7 @@ iframe {
     }
 
     .about-img .img-1 img {
-        max-width: 100%;
+        max-width: 93%;
         height: auto;
         margin-bottom: 20px; /* Add spacing between image and text */
     }
@@ -1508,7 +1510,8 @@ iframe {
     }
 
     .section-custom p {
-        font-size: 0.55rem;
+        font-size: 1rem;
+        font-weight: 500;
     }
 }
 
@@ -1834,7 +1837,7 @@ iframe {
   }
   
   .contact-icons {
-    position: absolute;
+    position: fixed;
     top: 50%; /* Center vertically */
     right: 0; /* Align to the right */
     transform: translateY(-50%); /* Adjust for perfect centering */
@@ -1895,4 +1898,11 @@ iframe {
   }
   
 
- 
+  @media (max-width: 767px) {
+    /* Remove any margins/paddings on the right side */
+    .container-fluid, .container {
+        padding-right: 0;
+        padding-left: 0;
+    }
+    
+  }

@@ -63,9 +63,6 @@ body {
         width: 100%;
         overflow-x: hidden; /* Prevent horizontal scroll */
     }
-
-
-  
 }
 
 
@@ -558,7 +555,7 @@ progress {
 
 @media(min-width: 1200px) {
     .display-5 {
-        font-size: 2.2rem
+        font-size: 2.0rem
     }
 }
 
@@ -3142,7 +3139,7 @@ fieldset:disabled .btn {
 
 .btn-secondary {
     color: #fff;
-    background-color: #1f2e4e;
+    /* background-color: #1f2e4e; */
     border-color: #1f2e4e
 }
 
