@@ -1561,6 +1561,130 @@ iframe {
 
 
 
+/* Container Styles */
+.lead-form-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Form Container */
+.form-container {
+    width: 35%; /* Reduced width for better alignment */
+    background: #f8f9fa;
+    padding: 20px 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #333;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.form-container textarea {
+    resize: none; /* Prevent resizing for consistency */
+    height: 100px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 12px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background: #0056b3;
+}
+
+/* Numbers Container */
+.numbers-container {
+    width: 60%; /* Adjusted width for better spacing with the form */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.number-box {
+    width: 48%; /* Ensures two numbers fit in a row */
+    text-align: center;
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.number-box:hover {
+    transform: scale(1.05);
+}
+
+.number-box img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.number-box h3 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    margin: 0;
+}
+
+.number-box p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+
+
+
+
+@media (max-width: 768px) {
+    .lead-form-section {
+        flex-direction: column;
+    }
+
+    .form-container,
+    .numbers-container {
+        width: 100%;
+    }
+
+    .number-box {
+        width: 100%;
+    }
+}
+
+
+
+
+
 /* Overall Container */
 .subscription-container {
     display: flex;

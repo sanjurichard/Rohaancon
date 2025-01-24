@@ -30,7 +30,31 @@
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".count");
 
+    counters.forEach((counter) => {
+        counter.innerText = "0"; // Initialize each counter
+
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target"); // Target number
+            const current = +counter.innerText; // Current number
+            const increment = Math.ceil(target / 1000); // Adjust speed by dividing target
+
+            if (current < target) {
+                counter.innerText = current + increment; // Update number
+                setTimeout(updateCount, 20); // Recursive call for smooth animation
+            } else {
+                counter.innerText = target; // Ensure target is the final number
+            }
+        };
+
+        updateCount(); // Start counting
+    });
+});
+
+</script>
 <body>
 
     <!-- Spinner Start -->
@@ -180,7 +204,7 @@
     <br>
 
     </br>
-    <div class="subscription-container">
+    <!-- <div class="subscription-container">
         <form class="subscription-form">
             <div class="form-group">
                 <label for="name">Your Name</label>
@@ -199,9 +223,47 @@
             </div>
             <button type="submit" class="subscribe-button">Book Now</button>
         </form>
+    </div> -->
+
+
+    <div class="lead-form-section">
+        <div class="form-container">
+            <h2>Get in Touch</h2>
+            <form action="/submit" method="post">
+                <input type="text" placeholder="Your Name" name="name" required>
+                <input type="email" placeholder="Your Email" name="email" required>
+                <input type="text" placeholder="Your Phone" name="phone" required>
+                <textarea placeholder="Your Message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="numbers-container">
+            <div class="number-box">
+                <img src="img/excavator-Traced.png" alt="Icon">
+                <h3 class="count" data-target="200">0</h3>
+                <p>Build Area Sq.ft</p>
+            </div>
+            <div class="number-box">
+                <img src="img/interior-design-Traced.png" alt="Icon">
+                <h3 class="count" data-target="200">0</h3>
+                <p>Units Sold</p>
+            </div>
+            <div class="number-box">
+                <img src="img/office-Traced.png" alt="Icon">
+                <h3 class="count" data-target="63">0</h3>
+                <p>Projects</p>
+            </div>
+            <div class="number-box">
+                <img src="img/map-Traced.png" alt="Icon">
+                <h3 class="count" data-target="25">0</h3>
+                <p>Locations</p>
+            </div>
+        </div>
     </div>
+    
+    
 
-
+    
     <br>
     <br>
 
