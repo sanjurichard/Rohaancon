@@ -1131,7 +1131,7 @@ iframe {
   padding: 20px;
   background-color: #fff; /* Matches the white background in your image */
   max-width: 1350px;
-  margin-left: 100px;
+  margin-left: 90px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 
               0 -1px 3px rgba(0, 0, 0, 0.1), 
               -1px 4px 3px rgba(0, 0, 0, 0.1), 
@@ -1639,8 +1639,10 @@ iframe {
     }
 
     .partners-section {
-        margin-left: 0px;
+        margin-left: 22px;
         padding: 15px;
+        max-width: 319px;
+
     }
 }
 
@@ -1919,6 +1921,8 @@ iframe {
 
     .mobile-image1 {
         display: block; /* Show the mobile image for small screens */
+        width: 74%;
+        margin-left: 29px;
     }
 }
   
