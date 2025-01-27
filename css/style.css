@@ -1130,6 +1130,8 @@ iframe {
   text-align: center;
   padding: 20px;
   background-color: #fff; /* Matches the white background in your image */
+  max-width: 1350px;
+  margin-left: 90px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 
               0 -1px 3px rgba(0, 0, 0, 0.1), 
               -1px 4px 3px rgba(0, 0, 0, 0.1), 
@@ -1196,6 +1198,10 @@ iframe {
     font-size: 1.2rem;
     margin-top: 20px;
     margin-bottom: 10px;
+  }
+
+  .center{
+    align-items: center;
   }
   
 
@@ -1298,6 +1304,10 @@ iframe {
         flex-direction: column; /* Stack content vertically */
         gap: 20px;
     }
+    .ph-icon{
+        transform: rotate(-423deg);
+    }
+   
 
     .image-grid {
         display: grid;
@@ -1629,6 +1639,7 @@ iframe {
     }
 
     .partners-section {
+        margin-left: 0px;
         padding: 15px;
     }
 }
