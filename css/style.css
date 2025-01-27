@@ -1130,10 +1130,10 @@ iframe {
   text-align: center;
   padding: 20px;
   background-color: #fff; /* Matches the white background in your image */
-  /* box-shadow: 0 1px 5px rgba(0, 0, 0, 0.2), 
-              0 -1px 5px rgba(0, 0, 0, 0.1), 
-              -1px 4px 5px rgba(0, 0, 0, 0.1), 
-              1px 4px 10px rgba(0, 0, 0, 0.1);  */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 
+              0 -1px 3px rgba(0, 0, 0, 0.1), 
+              -1px 4px 3px rgba(0, 0, 0, 0.1), 
+              1px 4px 3px rgba(0, 0, 0, 0.1); 
   border-radius: 10px; /* Optional rounded corners */
 }
 
