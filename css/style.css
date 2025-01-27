@@ -1645,7 +1645,9 @@ iframe {
 
     }
 }
-
+.resendial{
+    text-align: center;
+}
 
 @media (max-width: 768px) {
     .why-choose-section {

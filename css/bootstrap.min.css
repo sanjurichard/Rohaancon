@@ -7790,7 +7790,7 @@ fieldset:disabled .btn {
 
 .mb-0 {
     margin-bottom: 0 !important;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .mb-1 {
