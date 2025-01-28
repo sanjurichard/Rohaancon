@@ -128,6 +128,9 @@
 .sticky-top {
     transition: 1s;
 }
+.navbarleft{
+    margin-left: 60px !important;
+}
 
 .navbar-light .navbar-nav .nav-link {
     position: relative;
