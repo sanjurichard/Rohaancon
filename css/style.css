@@ -1134,20 +1134,24 @@ iframe {
 }
 
 .partners-section {
-  text-align: center;
-  padding: 20px;
-  background-color: #fff; /* Matches the white background in your image */
-  max-width: 1350px;
-  margin-left: 70px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2), 
-              0 -1px 3px rgba(0, 0, 0, 0.1), 
-              -1px 4px 3px rgba(0, 0, 0, 0.1), 
-              1px 4px 3px rgba(0, 0, 0, 0.1); 
-  border-radius: 10px; /* Optional rounded corners */
-}
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Matches the white background */
+    width: fit-content; /* Shrink to fit the image */
+    max-width: 80%; /* Ensure responsiveness */
+    margin: 0 auto; /* Center the box */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Stronger shadow for better effect */
+    border-radius: 10px; /* Optional rounded corners */
+    padding: 15px; /* Reduce padding to make it tighter */
+  }
+  
+
 
 .partners-banner {
-  max-width: 80%;
+  max-width: 98%;
   height: auto;
   display: inline-block;
 }
