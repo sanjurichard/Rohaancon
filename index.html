@@ -31,31 +31,56 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const counters = document.querySelectorAll(".count");
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".count");
 
-        counters.forEach((counter) => {
-            counter.innerText = "0"; // Initialize each counter
+    counters.forEach((counter) => {
+        counter.innerText = "0"; // Initialize each counter
 
-            const updateCount = () => {
-                const target = +counter.getAttribute("data-target"); // Target number
-                const current = +counter.innerText; // Current number
-                const increment = Math.ceil(target / 1000); // Adjust speed by dividing target
+        const updateCount = () => {
+            const target = +counter.getAttribute("data-target"); // Target number
+            let current = +counter.innerText.replace(/\D/g, ""); // Remove any non-numeric characters
+            const increment = Math.ceil(target / 100); // Adjust speed by dividing target
 
-                if (current < target) {
-                    counter.innerText = (current + increment).toLocaleString(); // Format number with commas
-                    setTimeout(updateCount, 20); // Recursive call for smooth animation
+            if (current < target) {
+                counter.innerText = `${Math.min(current + increment, target)}+`; // Increment smoothly
+                setTimeout(updateCount, 20); // Recursive call for smooth animation
+            } else {
+                // Format the final number appropriately
+                if (target >= 1000) {
+                    counter.innerText = `${(target / 1000).toFixed(1)}K+`; // Display "K+" for 1000+
                 } else {
-                    counter.innerText = target.toLocaleString(); // Ensure target is the final number
-
-                    // Add the plus symbol (+) to every number
-                    counter.innerText = counter.innerText + "+"; // Append the plus symbol
+                    counter.innerText = `${target}+`; // Normal number with "+"
                 }
-            };
+            }
+        };
 
-            updateCount(); // Start counting
+        updateCount(); // Start counting
+    });
+});
+
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll(".scroll-link");
+
+    links.forEach((link) => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault(); // Prevent the page from refreshing
+            const targetId = this.getAttribute("href").substring(1); // Get the ID without the #
+            const targetElement = document.getElementById(targetId);
+
+            if (targetElement) {
+                // Scroll smoothly to the target element
+                targetElement.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                });
+            }
         });
     });
+});
 
 
 </script>
@@ -245,6 +270,8 @@
                 <h3 class="count" data-target="200000">0</h3>
                 <p>Build Area Sq.ft</p>
             </div>
+         
+            
             <div class="number-box">
                 <img src="img/interior-design-Traced.png" alt="Icon">
                 <h3 class="count" data-target="200">0</h3>
@@ -285,18 +312,20 @@
             <!-- <div class="center text-center mx-auto pb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 800px;"> -->
             <h1 class="display-5 text-capitalize ">Our Projects </h1>
 
-            <p class="resendial mb-0">Residential Property | Commercial Property
-
+            <p class="resendial mb-0">
+                <a href="#carousel1" class="scroll-link" target="_blank">Residential Property</a> | 
+                <a href="#carousel2" class="scroll-link" target="_blank">Commercial Property</a>
             </p>
+            
         </div>
         <br>
         <div class="categories-carousel owl-carousel wow fadeInUp" data-wow-delay="0.1s">
-            <div class="categories-item p-4">
-                <div class="categories-item-inner">
+            <div id="carousel1" class="categories-item p-4">
+                <div  class="categories-item-inner">
                     <div class="categories-img rounded-top">
                         <img src="img/Front-View-min.jpg" class="img-fluid w-100 rounded-top" alt="">
                     </div>
-                    <div class="categories-content rounded-bottom p-4">
+                    <div  class="categories-content rounded-bottom p-4">
                         <h4>Rohaan Cypress</h4>
                         <div class="categories-review mb-4">
                             <p>Madippakam</p>
@@ -402,7 +431,7 @@
                 </div>
             </div>
             <div class="categories-item p-4">
-                <div class="categories-item-inner">
+                <div id="carousel2" class="categories-item-inner">
                     <div class="categories-img rounded-top">
                         <img src="img/Front-View-min.jpg" class="img-fluid w-100 rounded-top" alt="">
                     </div>
@@ -514,7 +543,7 @@
     <!-- Features End -->
     <br>
     <!-- About Start -->
-    <div class="container-fluid overflow-hidden about py-5">
+    <div  class="container-fluid overflow-hidden about py-5">
         <div class="container py-5">
             <div class="row g-5">
                 <h1 class="display-5 text-capitalize">DISCOVER YOUR <span class="text-primary">DREAM HOME </span></h1>
