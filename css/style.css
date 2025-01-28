@@ -1650,9 +1650,9 @@ iframe {
     }
 
     .partners-section {
-        margin-left: 31px;
+        /* margin-left: 31px; */
         padding: 15px;
-        max-width: 319px;
+        max-width: 283px;
 
     }
 }
