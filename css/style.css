@@ -1974,6 +1974,7 @@ iframe {
   
   .phone-icon {
     background-color: #007bff; /* Blue for phone number */
+    height: 142px;
   }
   
   .whatsapp-icon img {
@@ -1994,8 +1995,8 @@ iframe {
     }
   
     .contact-icons a {
-      font-size: 12px; /* Reduce font size */
-      padding: 8px; /* Smaller padding */
+      font-size: 16px; /* Reduce font size */
+     
     }
   
     .whatsapp-icon img {
@@ -2027,7 +2028,7 @@ iframe {
 .section-title {
     font-size: 24px;
     font-weight: bold;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     color: #004aad;
 }
 
