@@ -1050,7 +1050,7 @@ iframe {
 }
 
 .section-custom img {
-    width: 210px;
+    width: 173px;
     height: 175px;
     object-fit: cover;
     border-radius: 5px;
@@ -1933,14 +1933,44 @@ iframe {
 
     .mobile-image1 {
         display: block; /* Show the mobile image for small screens */
-        width: 74%;
+        width: 100%;
         margin-left: 29px;
     }
 }
   
 
-
-
+.icon-text-align-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 80px;
+    gap: 8px; /* Space between the icon and the text */
+  }
+  
+  .icon-text-align-horizontal i {
+    font-size: 1.2rem; /* Adjust the icon size */
+  }
+  
+  .icon-text-align-horizontal span {
+    font-size: 1rem; /* Adjust the text size */
+    color: #000; /* Optional: Ensures the text color is consistent */
+  }
+  
+/* Mobile responsive styles */
+@media (max-width: 768px) {
+    .icon-text-align-horizontal {
+      margin-left: 45px; /* Reduce left margin for smaller screens */
+      gap: 6px; /* Reduce space between the icon and text */
+    }
+  
+    .icon-text-align-horizontal i {
+      font-size: 1rem; /* Decrease the icon size */
+    }
+  
+    .icon-text-align-horizontal span {
+      font-size: 0.9rem; /* Decrease the text size */
+    }
+  }
 
   .header-carousel {
     position: relative; /* For positioning icons on top of the carousel */
