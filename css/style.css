@@ -1934,7 +1934,7 @@ iframe {
     .mobile-image1 {
         display: block; /* Show the mobile image for small screens */
         width: 100%;
-        margin-left: 29px;
+        /* margin-left: 29px; */
     }
 }
   
