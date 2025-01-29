@@ -86,6 +86,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+document.addEventListener("DOMContentLoaded", function () {
+        const form = document.getElementById("contactForm");
+        form.addEventListener("submit", function (e) {
+            e.preventDefault(); // Prevent default form submission
+
+            const formData = new FormData(form);
+
+            fetch("send_mail.php", {
+                method: "POST",
+                body: formData,
+            })
+                .then((response) => response.text())
+                .then((result) => {
+                    document.getElementById("formMessage").innerHTML = `<p style="color: green;">${result}</p>`;
+                    form.reset(); // Clear the form
+                })
+                .catch((error) => {
+                    document.getElementById("formMessage").innerHTML = `<p style="color: red;">Error: Could not send your message.</p>`;
+                });
+        });
+    });
+
 </script>
 
 <body>
@@ -294,13 +316,14 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
         <div class="form-container">
             <h2>Talk to an Expert</h2>
-            <form action="/submit" method="post">
+            <div class="message" id="formMessage"></div>
+            <form id="contactForm">
                 <input type="text" placeholder="Your Name" name="name" required>
                 <input type="email" placeholder="Your Email" name="email" required>
                 <input type="text" placeholder="Your Phone" name="phone" required>
-
                 <button type="submit">Submit</button>
             </form>
+            
         </div>
     </div>
 

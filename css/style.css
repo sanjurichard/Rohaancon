@@ -1956,6 +1956,9 @@ iframe {
     color: #000; /* Optional: Ensures the text color is consistent */
   }
   
+
+
+
 /* Mobile responsive styles */
 @media (max-width: 768px) {
     .icon-text-align-horizontal {
