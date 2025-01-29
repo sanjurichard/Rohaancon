@@ -1959,7 +1959,7 @@ iframe {
 /* Mobile responsive styles */
 @media (max-width: 768px) {
     .icon-text-align-horizontal {
-      margin-left: 45px; /* Reduce left margin for smaller screens */
+      margin-left: 60px; /* Reduce left margin for smaller screens */
       gap: 6px; /* Reduce space between the icon and text */
     }
   
