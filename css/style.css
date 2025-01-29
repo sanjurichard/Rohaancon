@@ -1943,7 +1943,7 @@ iframe {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin-left: 80px;
+    margin-left: 110px;
     gap: 8px; /* Space between the icon and the text */
   }
   
