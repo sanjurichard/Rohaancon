@@ -317,7 +317,8 @@ document.addEventListener("DOMContentLoaded", function () {
         <div class="form-container">
             <h2>Talk to an Expert</h2>
             <div class="message" id="formMessage"></div>
-            <form id="contactForm">
+            <form action="send_mail.php" method="post">
+
                 <input type="text" placeholder="Your Name" name="name" required>
                 <input type="email" placeholder="Your Email" name="email" required>
                 <input type="text" placeholder="Your Phone" name="phone" required>
