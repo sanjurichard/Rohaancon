@@ -2182,6 +2182,45 @@ iframe {
     line-height: 1.5;
 }
 
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+    .banner {
+        height: auto; /* Adjusts height for better layout on smaller screens */
+        padding: 40px 20px;
+    }
+
+    .banner-content {
+        margin-right: 0;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .banner-title {
+        font-size: 32px; /* Slightly smaller title font */
+    }
+
+    .banner-description {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+}
+
+@media (max-width: 480px) {
+    .banner {
+        height: auto;
+        padding: 30px 15px;
+    }
+
+    .banner-title {
+        font-size: 24px; /* Further reduced font size for very small screens */
+    }
+
+    .banner-description {
+        font-size: 14px;
+    }
+}
+
+
 .property-details {
     display: flex;
     margin: 20px;
