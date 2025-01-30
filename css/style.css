@@ -2131,3 +2131,581 @@ iframe {
         text-align: center;
     }
 }
+
+
+
+/* ashoka page css code from here */
+
+
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('../img/ashoka-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 55%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+    z-index: 1;
+}
+
+.banner-content {
+    max-width: 552px;
+    text-align: start;
+    margin-right: 52%;
+    position: relative;
+    z-index: 2; /* Ensures text is above the overlay */
+}
+
+.banner-title {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.banner-description {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+.property-details {
+    display: flex;
+    margin: 20px;
+}
+
+.image-container {
+    flex: 1;
+    max-width: 50%;
+}
+
+.property-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.property-info {
+    flex: 1;
+    padding: 20px;
+    background-color: #39AAE0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-left: 20px;
+}
+
+.property-info h1 {
+    font-size: 28px;
+    color: #2c3e50;
+}
+.property-details-info p {
+    font-size: 16px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.property-details-info i {
+    font-size: 18px;
+    color: #ffffff;
+    margin-right: 10px;
+}
+
+
+.cta-buttons {
+    margin-top: 20px;
+}
+
+.download-brochure {
+    padding: 10px 20px;
+    background-color: #ffffff;
+    color: #39AAE0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.download-brochure:hover {
+    background-color: #3498db;
+}
+
+.contact-info {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.contact-info span {
+    font-weight: bold;
+}
+
+.progress-bar-container {
+    width: 100%; /* Adjust width as needed */
+    max-width: 300px; /* Optional max width */
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+}
+
+.progress-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #34495e;
+}
+
+.progress-bar {
+    background-color: #e0e0e0; /* Light gray for the background */
+    border-radius: 40px;
+    height: 30px; /* Increased height for better visibility */
+    overflow: hidden;
+    position: relative;
+}
+
+.progress-fill {
+    background-color: #ffffff; /* Green color for the progress */
+    height: 100%;
+    width: 0; /* Dynamic width set via inline styles */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    color: #3498db; /* Text color inside the bar */
+    font-weight: bold;
+    font-size: 14px;
+    transition: width 0.4s ease; /* Smooth animation */
+}
+
+.progress-percentage {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 1;
+}
+
+/* General Mobile Styles */
+@media (max-width: 768px) {
+    .banner {
+        height: 300px; /* Reduce banner height for smaller screens */
+        padding: 10px;
+    }
+
+    .banner-title {
+        font-size: 28px; /* Smaller title font size */
+    }
+
+    .banner-description {
+        font-size: 14px; /* Reduce description font size */
+    }
+
+    .property-details {
+        flex-direction: column; /* Stack image and details vertically */
+        margin: 10px; /* Reduce margin for smaller screens */
+    }
+
+    .image-container {
+        max-width: 100%; /* Allow image to take full width */
+        margin-bottom: 20px; /* Add spacing below image */
+    }
+
+    .property-info {
+        margin-left: 0; /* Remove left margin */
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+
+    .property-info h1 {
+        font-size: 22px; /* Reduce heading size */
+    }
+
+    .property-details-info p {
+        font-size: 14px; /* Smaller text size for details */
+    }
+
+    .cta-buttons {
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center;
+    }
+
+    .download-brochure {
+        padding: 8px 15px; /* Reduce padding for buttons */
+        font-size: 14px; /* Smaller text size for buttons */
+    }
+
+    .progress-bar-container {
+        max-width: 100%; /* Progress bar takes full width */
+    }
+
+    .progress-bar {
+        height: 20px; /* Smaller height for the progress bar */
+        border-radius: 20px;
+    }
+
+    .progress-title {
+        font-size: 14px; /* Smaller text size */
+    }
+
+    .progress-fill {
+        font-size: 12px; /* Adjust font size inside the bar */
+    }
+}
+
+/* Extra Small Screens (e.g., less than 480px) */
+@media (max-width: 480px) {
+    .banner-title {
+        font-size: 22px; /* Further reduce title size */
+    }
+
+    .banner-description {
+        font-size: 12px; /* Further reduce description size */
+        line-height: 1.4; /* Adjust line height for better readability */
+    }
+
+    .property-info h1 {
+        font-size: 20px; /* Smaller heading size */
+    }
+
+    .property-details-info p {
+        font-size: 12px; /* Further reduce text size */
+    }
+
+    .download-brochure {
+        padding: 6px 12px; /* Smaller buttons for extra small screens */
+        font-size: 12px;
+    }
+
+    .progress-bar {
+        height: 15px; /* Smaller progress bar height */
+    }
+
+    .progress-fill {
+        font-size: 10px; /* Adjust font size inside progress bar */
+    }
+}
+
+
+  
+  /* Property Section Container */
+  .unique-property-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* max-width: 1200px; */
+    margin: 20px auto;
+  }
+  
+  /* Image Container */
+  .unique-property-image-container {
+    flex: 1;
+    text-align: center;
+    padding-right: 20px;
+  }
+  
+  .unique-property-image {
+    max-width: 90%;
+    border-radius: 10px;
+    border: 8px solid #ffffff; /* White border around the image */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional shadow for better visibility */
+  }
+  
+  /* Property Info Container */
+  .unique-property-info-container {
+    flex: 1;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 26%;
+    text-align: left;
+  }
+  
+  .unique-property-info-container h2 {
+    font-size: 24px;
+    margin: 0;
+    color: #333333;
+  }
+  
+  .unique-property-info-container h3 {
+    font-size: 32px;
+    color: #39AAE0;
+    margin: 10px 0 20px 0;
+  }
+  
+  /* Form Styling */
+  .unique-contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .unique-contact-form input {
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .unique-contact-form button {
+    padding: 10px 20px;
+    background-color: #39AAE0;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .unique-contact-form button:hover {
+    background-color: #2c80b4;
+  }
+  
+  /* Responsive Design */
+@media (max-width: 768px) {
+    .unique-property-section {
+      flex-direction: column; /* Stack elements vertically */
+      align-items: center; /* Center align for better appearance */
+    }
+  
+    .unique-property-image-container {
+      padding-right: 0; /* Remove padding for a cleaner look */
+      margin-bottom: 20px; /* Add spacing between image and info section */
+    }
+  
+    .unique-property-info-container {
+      max-width: 100%; /* Make it full width */
+      text-align: center; /* Center-align text for smaller screens */
+    }
+  
+    .unique-property-info-container h2,
+    .unique-property-info-container h3 {
+      text-align: center; /* Center-align headers */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .unique-property-section {
+      padding: 15px; /* Reduce padding for smaller devices */
+    }
+  
+    .unique-contact-form input {
+      font-size: 14px; /* Adjust input font size */
+    }
+  
+    .unique-contact-form button {
+      font-size: 14px; /* Adjust button font size */
+    }
+  }
+
+
+
+
+
+
+  .amenities-section {
+    padding: 40px;
+    background-color: #f8f8f8; /* Optional background color */
+    text-align: center;
+  }
+  
+  .amenities-title {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    justify-content: center;
+  }
+  
+  .amenities-item {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .amenities-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .amenities-image:hover {
+    transform: scale(1.05); /* Zoom effect on hover */
+  }
+  /* Mobile responsiveness */
+@media (max-width: 768px) {
+    .amenities-title {
+      font-size: 28px;
+    }
+  
+    .amenities-grid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .amenities-title {
+      font-size: 24px;
+    }
+  
+    .amenities-grid {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 8px;
+    }
+  }
+
+
+
+
+
+
+/* General Styling */
+.related-projects {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.related-projects h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #2b4b72;
+}
+
+.projects-container1 {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1100px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.project-card {
+  background: linear-gradient(to bottom, #39AAE0, #1f5d7a);
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  flex: 1 1 calc(33.33% - 20px);
+  max-width: calc(33.33% - 20px);
+}
+
+.project-card img {
+    width: 94%;
+    border-radius: 15px 15px 15px 15px;
+    margin-top: 13px;
+}
+
+.project-details {
+  padding: 20px;
+  color: white;
+}
+
+.project-details h3 {
+  font-size: 20px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.project-details p {
+  margin: 5px 0 15px;
+  font-size: 16px;
+}
+
+.project-details ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .projects-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .project-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-details ul {
+    font-size: 12px;
+  }
+
+  .project-details h3 {
+    font-size: 18px;
+  }
+
+  .related-projects h2 {
+    font-size: 20px;
+  }
+}
+
+
+.responsive-map-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* Aspect ratio: 16:9 */
+  overflow: hidden;
+  border: 2px solid #ccc; /* Optional: Border around the map */
+  border-radius: 8px; /* Optional: Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Shadow for better appearance */
+  margin: 0; /* Ensures no extra margin outside the container */
+}
+
+.responsive-map-container iframe {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  border: 0; /* Removes the default border around the iframe */
+}
+
+
+
+/* Mobile Responsive Adjustments */
+@media (max-width: 768px) {
+  .responsive-map-container {
+    padding-bottom: 75%; /* Adjust the aspect ratio for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .responsive-map-container {
+    padding-bottom: 100%; /* Square aspect ratio for very small screens */
+  }
+}

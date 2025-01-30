@@ -5399,10 +5399,11 @@ fieldset:disabled .btn {
     flex-direction: column;
     justify-content: center;
     overflow: hidden;
-    color: #fff;
+    color: #060101;
     text-align: center;
-    white-space: nowrap;
-    background-color: #ea001e;
+    white-space: nowrap;    
+    border-radius: 33px;
+    background-color: #ffffff;
     transition: width .6s ease
 }
 
