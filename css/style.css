@@ -2322,49 +2322,59 @@ iframe {
   
 
 
-.property-details {
+  .property-details {
     display: flex;
-    margin: 20px;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+    height: 550px; /* Adjust the height as needed */
+}
+
+.property-content {
+    display: flex;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: none;
+    height: 100%; /* Ensures the content fits the parent height */
 }
 
 .image-container {
-    flex: 1;
-    max-width: 50%;
+    flex: 7;
+    width: 70%;
+    height: 100%; /* Matches the reduced height */
 }
 
 .property-image {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 100%;
+   
 }
 
 .property-info {
-    flex: 1;
+    flex: 4.5;
+    width: 30%;
     padding: 20px;
     background-color: #39AAE0;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    margin-left: 20px;
-}
-
-.property-info h1 {
-    font-size: 28px;
-    color: #2c3e50;
-}
-.property-details-info p {
-    font-size: 16px;
     color: #ffffff;
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%; /* Matches the reduced height */
+}
+
+.property-details-info p {
+    font-size: 16px;
     margin: 10px 0;
+    display: flex;
+    align-items: center;
 }
 
 .property-details-info i {
     font-size: 18px;
-    color: #ffffff;
     margin-right: 10px;
 }
-
 
 .cta-buttons {
     margin-top: 20px;
@@ -2377,16 +2387,17 @@ iframe {
     border: none;
     border-radius: 25px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 .download-brochure:hover {
-    background-color: #3498db;
+    background-color: #ffffff;
+    color: #2980b9;
 }
 
 .contact-info {
     margin-top: 20px;
     font-size: 14px;
-    color: #ffffff;
 }
 
 .contact-info span {
@@ -2394,48 +2405,38 @@ iframe {
 }
 
 .progress-bar-container {
-    width: 100%; /* Adjust width as needed */
-    max-width: 300px; /* Optional max width */
-    margin: 20px 0;
-    font-family: Arial, sans-serif;
+    margin-top: 20px;
 }
 
 .progress-title {
     font-size: 16px;
     font-weight: bold;
     margin-bottom: 5px;
-    color: #34495e;
 }
 
 .progress-bar {
-    background-color: #e0e0e0; /* Light gray for the background */
-    border-radius: 40px;
-    height: 30px; /* Increased height for better visibility */
-    overflow: hidden;
+    background-color: #e0e0e0;
+    border-radius: 25px;
+    height: 30px;
+    max-width: 58%;
     position: relative;
+    overflow: hidden;
 }
 
 .progress-fill {
-    background-color: #ffffff; /* Green color for the progress */
-    height: 100%;
-    width: 0; /* Dynamic width set via inline styles */
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    color: #3498db; /* Text color inside the bar */
-    font-weight: bold;
+    background-color: #ffffff;
+    height: 70%;
+    width: 75%;
+    text-align: center;
+    line-height: 20px;
     font-size: 14px;
-    transition: width 0.4s ease; /* Smooth animation */
+    font-weight: bold;
+    color: #39AAE0;
+    transition: width 0.3s ease;
 }
 
-.progress-percentage {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    z-index: 1;
-}
+
+  
 
 /* General Mobile Styles */
 @media (max-width: 768px) {
