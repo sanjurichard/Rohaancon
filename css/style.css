@@ -2227,7 +2227,7 @@ iframe {
     margin: 0 auto; /* Center the section */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+   
     text-align: center; /* Center the text */
     line-height: 1.6;
   }
@@ -2444,105 +2444,61 @@ iframe {
 
   
 
-/* General Mobile Styles */
 @media (max-width: 768px) {
-    .banner {
-        height: 300px; /* Reduce banner height for smaller screens */
-        padding: 10px;
-    }
-
-    .banner-title {
-        font-size: 28px; /* Smaller title font size */
-    }
-
-    .banner-description {
-        font-size: 14px; /* Reduce description font size */
-    }
-
     .property-details {
-        flex-direction: column; /* Stack image and details vertically */
-        margin: 10px; /* Reduce margin for smaller screens */
+        flex-direction: column; /* Stack content vertically */
+        height: auto; /* Allow content height to adjust dynamically */
+        padding: 10px; /* Add padding for better spacing */
+    }
+
+    .property-content {
+        flex-direction: column; /* Stack image and details */
+        height: auto;
     }
 
     .image-container {
-        max-width: 100%; /* Allow image to take full width */
-        margin-bottom: 20px; /* Add spacing below image */
+        width: 100%;
+        height: 200px; /* Set a specific height for the image on mobile */
+    }
+
+    .property-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Ensure the image fills the container without distortion */
     }
 
     .property-info {
-        margin-left: 0; /* Remove left margin */
-        padding: 15px; /* Adjust padding for smaller screens */
-    }
-
-    .property-info h1 {
-        font-size: 22px; /* Reduce heading size */
+        width: 100%;
+        height: auto; /* Allow content to expand */
+        padding: 15px;
+        font-size: 14px; /* Adjust font size for smaller screens */
     }
 
     .property-details-info p {
-        font-size: 14px; /* Smaller text size for details */
+        font-size: 14px;
+        margin: 8px 0;
     }
 
     .cta-buttons {
         display: flex;
         flex-direction: column; /* Stack buttons vertically */
-        align-items: center;
-    }
-
-    .download-brochure {
-        padding: 8px 15px; /* Reduce padding for buttons */
-        font-size: 14px; /* Smaller text size for buttons */
+        gap: 10px; /* Add space between buttons */
     }
 
     .progress-bar-container {
-        max-width: 100%; /* Progress bar takes full width */
+        margin-top: 15px;
     }
 
     .progress-bar {
-        height: 20px; /* Smaller height for the progress bar */
-        border-radius: 20px;
+        max-width: 100%; /* Ensure progress bar fits within the container */
     }
 
-    .progress-title {
-        font-size: 14px; /* Smaller text size */
-    }
-
-    .progress-fill {
-        font-size: 12px; /* Adjust font size inside the bar */
+    .contact-info {
+        margin-top: 10px;
+        font-size: 12px; /* Smaller font size for better fit */
     }
 }
 
-/* Extra Small Screens (e.g., less than 480px) */
-@media (max-width: 480px) {
-    .banner-title {
-        font-size: 22px; /* Further reduce title size */
-    }
-
-    .banner-description {
-        font-size: 12px; /* Further reduce description size */
-        line-height: 1.4; /* Adjust line height for better readability */
-    }
-
-    .property-info h1 {
-        font-size: 20px; /* Smaller heading size */
-    }
-
-    .property-details-info p {
-        font-size: 12px; /* Further reduce text size */
-    }
-
-    .download-brochure {
-        padding: 6px 12px; /* Smaller buttons for extra small screens */
-        font-size: 12px;
-    }
-
-    .progress-bar {
-        height: 15px; /* Smaller progress bar height */
-    }
-
-    .progress-fill {
-        font-size: 10px; /* Adjust font size inside progress bar */
-    }
-}
 
 
   
