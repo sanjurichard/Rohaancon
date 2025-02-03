@@ -2570,10 +2570,10 @@ iframe {
   /* Property Info Container */
   .unique-property-info-container {
     flex: 1;
-    background-color: #f4f4f4;
+    /* background-color: #f4f4f4; */
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
     max-width: 26%;
     text-align: left;
   }
@@ -2599,7 +2599,8 @@ iframe {
   .unique-contact-form input {
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #ccc;
+    border: 1px solid #fffffffb;
+    background-color:#c9c4c4fb ;
     border-radius: 5px;
     font-size: 16px;
   }
