@@ -2223,11 +2223,10 @@ iframe {
 
 /* Unique Section Styling */
 .unique-container {
-    max-width: 1100px;
+    max-width: 800px;
     margin: 0 auto; /* Center the section */
     padding: 20px;
     border-radius: 10px;
-   
     text-align: center; /* Center the text */
     line-height: 1.6;
   }
@@ -2541,7 +2540,7 @@ iframe {
     padding: 20px;
     border-radius: 10px;
     /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
-    max-width: 26%;
+    max-width: 36%;
     text-align: left;
   }
   
@@ -2560,6 +2559,7 @@ iframe {
   /* Form Styling */
   .unique-contact-form {
     display: flex;
+    width: 50%;
     flex-direction: column;
   }
   
@@ -2577,7 +2577,7 @@ iframe {
     background-color: #39AAE0;
     color: #ffffff;
     border: none;
-    border-radius: 5px;
+    border-radius: 35px;
     font-size: 16px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -2587,46 +2587,60 @@ iframe {
     background-color: #2c80b4;
   }
   
-  /* Responsive Design */
-@media (max-width: 768px) {
+ 
+
+
+  @media (max-width: 768px) {
+    /* Adjust Property Section Layout */
     .unique-property-section {
-      flex-direction: column; /* Stack elements vertically */
-      align-items: center; /* Center align for better appearance */
+      flex-direction: column; /* Stack the content vertically */
+      padding: 10px;
     }
   
+    /* Image Container for Mobile */
     .unique-property-image-container {
-      padding-right: 0; /* Remove padding for a cleaner look */
-      margin-bottom: 20px; /* Add spacing between image and info section */
+      padding-right: 0;
+      padding-bottom: 15px; /* Add spacing below the image */
     }
   
+    .unique-property-image {
+      max-width: 100%; /* Ensure the image fits the container */
+      border-radius: 8px;
+      border: 6px solid #ffffff; /* Adjust border for smaller screens */
+    }
+  
+    /* Property Info Container for Mobile */
     .unique-property-info-container {
-      max-width: 100%; /* Make it full width */
-      text-align: center; /* Center-align text for smaller screens */
+      max-width: 100%; /* Full width on smaller screens */
+      padding: 15px;
+      text-align: center; /* Center align text on mobile */
     }
   
-    .unique-property-info-container h2,
+    .unique-property-info-container h2 {
+      font-size: 20px; /* Adjust font size */
+    }
+  
     .unique-property-info-container h3 {
-      text-align: center; /* Center-align headers */
+      font-size: 24px; /* Adjust font size for headings */
     }
-  }
   
-  @media (max-width: 480px) {
-    .unique-property-section {
-      padding: 15px; /* Reduce padding for smaller devices */
+    /* Form Styling for Mobile */
+    .unique-contact-form {
+      width: 100%; /* Full width on mobile */
+      margin-top: 15px;
     }
   
     .unique-contact-form input {
-      font-size: 14px; /* Adjust input font size */
+      padding: 8px;
+      font-size: 14px; /* Smaller font size for better fit */
     }
   
     .unique-contact-form button {
-      font-size: 14px; /* Adjust button font size */
+      padding: 10px;
+      font-size: 14px; /* Adjust button size */
     }
   }
-
-
-
-
+  
 
 
   .amenities-section {
