@@ -2559,7 +2559,7 @@ iframe {
   /* Form Styling */
   .unique-contact-form {
     display: flex;
-    width: 50%;
+    width: 60%;
     flex-direction: column;
   }
   
