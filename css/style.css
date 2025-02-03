@@ -2870,8 +2870,12 @@ iframe {
   /* Gallery Grid */
   .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns by default */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    max-width: 61%;
+    margin: 0 auto; /* Centers the grid horizontally */
+    justify-content: center; /* Ensures grid items are centered */
+    align-items: center;
   }
   
   .gallery-item {
