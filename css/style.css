@@ -2909,3 +2909,186 @@ iframe {
     }
   }
   
+  .investment-container {
+    padding: 50px 20px;
+}
+
+.investment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.investment-icons img {
+    width: 60px;
+    height: 60px;
+}
+
+.investment-heading {
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.inves-center{
+    text-align: center;
+}
+.investment-form-section {
+    background: linear-gradient(to right, #1572a1, #2893d1);
+    padding: 30px;
+    border-radius: 100px;
+    max-width: 900px;
+    margin: 0 auto;
+    color: white;
+}
+
+.investment-form-section h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.investment-form-section h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.investment-form-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+}
+.investment-btn-container {
+    text-align: center;
+    margin-top: 10px;
+}
+.investment-form-container input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    width: 30%;
+    min-width: 200px;
+}
+
+.investment-submit-btn {
+    background-color: #2cb8ff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    margin-top: 10px;
+}
+
+.investment-submit-btn:hover {
+    background-color: #125c84;
+}
+
+@media (max-width: 768px) {
+    .investment-icons {
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .investment-icons img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .investment-heading {
+        font-size: 20px;
+    }
+
+    .investment-form-section {
+        padding: 20px;
+        border-radius: 50px;
+        text-align: center;
+    }
+
+    .investment-form-section h2 {
+        font-size: 16px;
+    }
+
+    .investment-form-section h3 {
+        font-size: 20px;
+    }
+
+    .investment-form-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .investment-form-container input {
+        width: 100%;
+    }
+
+    .investment-submit-btn {
+        width: 100%;
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .investment-btn-container {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.table-head{
+    text-align: center;
+}
+
+table {
+    width: 85%;
+    border-collapse: collapse;
+    text-align: center;
+    margin: 0 auto;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+td {
+    font-size: 16px;
+}
+
+.sold-out {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}
+
+.available {
+    background-color: #28a745;
+    color: white;
+    font-weight: bold;
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 768px) {
+    table {
+        width: 100%;
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
