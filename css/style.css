@@ -334,9 +334,7 @@ html {
 /*** Single Page Hero Header End ***/
 
 /*** Features Start ***/
-.feature {
-    background: var(--bs-light);
-}
+
 
 .feature .feature-item {
     display: flex;
@@ -3362,18 +3360,19 @@ td {
 
 .feature {
     text-align: center;
-    max-width: 150px;
+    max-width: 250px;
 }
 
 .feature img {
-    width: 50px;
-    height: 50px;
+    width: 160px;
+    height: 160px;
 }
 
 .feature p {
-    font-size: 14px;
+    font-size: 21px;
     font-weight: bold;
     margin-top: 10px;
+    color: #007bff;
 }
 
 /* Mobile Responsive */
