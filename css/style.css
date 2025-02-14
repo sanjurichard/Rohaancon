@@ -2145,6 +2145,7 @@ iframe {
     height: 400px;
     display: flex;
     justify-content: center;
+    position: relative;
     align-items: center;
     color: white;
     text-align: center;
@@ -3089,6 +3090,400 @@ td {
 
     th, td {
         padding: 8px;
+        font-size: 14px;
+    }
+}
+
+.banner-subtext {
+    font-size: 1.2rem;
+ 
+}
+
+.contact-form {
+    position: absolute;
+    right: 8%;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+    max-width: 300px;
+    width: 100%;
+    text-align: center;
+}
+
+.contact-form h3 {
+    color: #333;
+    font-size: 0.90rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+}
+
+.contact-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+.contact-form button {
+    background: #0099ff;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+.grab-section {
+    text-align: center;
+    font-size: 8.5rem;
+    font-weight: bold;
+    color: rgba(64, 58, 58, 0.1);
+    background: rgb(210, 206, 206);
+}
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        padding: 40px 10px;
+    }
+
+    .banner-content {
+        max-width: 100%;
+    }
+
+    .contact-form {
+        position: relative;
+        right: 0;
+        top: auto;
+        transform: none;
+        margin-top: 20px;
+    }
+
+    .grab-section {
+        font-size: 2rem;
+    }
+}
+
+
+
+.project-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+}
+
+.project-section-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Project Wrapper */
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 20px;
+}
+
+/* Image Styling */
+.project-image-box {
+    width: 100%;
+    max-width: 500px; /* Adjust this value if needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    justify-content: center;
+}
+
+.project-main-image {
+    width: 605px;
+    margin-left: -113px;
+    height: 324px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Content Styling */
+.project-details-box {
+    text-align: center;
+    margin-top: 20px;
+    max-width: 600px;
+}
+.price-button {
+    display: block;
+    width: fit-content;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin: 10px auto; /* Centering the button */
+}
+.project-name {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.project-location-name {
+    font-size: 16px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.project-info-text {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.project-description-text {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+/* Buttons */
+.project-buttons-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+.project-price-button,
+.project-brochure-button,
+.project-details-button {
+    padding: 10px 20px;
+    /* border: none;
+    border-radius: 5px; */
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.project-price-button {
+    background-color: #2196F3;
+    color: white;
+}
+
+.project-brochure-button {
+    background-color: #555;
+    color: white;
+}
+
+.project-details-button {
+    background-color: #0073e6;
+    color: white;
+}
+
+.project-price-button:hover,
+.project-brochure-button:hover,
+.project-details-button:hover {
+    opacity: 0.8;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+    .project-wrapper {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .project-image-box {
+        flex: 1;
+    }
+    
+
+    .project-details-box {
+        flex: 1;
+        text-align: left;
+        padding-left: 20px;
+    }
+
+    .project-buttons-box {
+        justify-content: flex-start;
+    }
+}
+
+
+
+.investment-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.number-bold {
+   
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.investment-stats {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+}
+
+.stat h3 {
+    font-size: 44px;
+    color: #007bff;
+}
+
+.stat p {
+    font-size: 26px;
+    color: #555;
+}
+
+.investment-features {
+    display: flex;
+    justify-content: center;
+    gap: 130px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.feature {
+    text-align: center;
+    max-width: 150px;
+}
+
+.feature img {
+    width: 50px;
+    height: 50px;
+}
+
+.feature p {
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .investment-stats, .investment-features {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+
+    .stat h3 {
+        font-size: 20px;
+    }
+
+    .stat p, .feature p {
+        font-size: 14px;
+    }
+}
+
+
+.investment-hub {
+    background-color: #5cbcf1;
+    color: white;
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Section Titles */
+.investment-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.investment-subtitle {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+.property-options-title {
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Paragraph Styling */
+.investment-text {
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Benefits List */
+.investment-benefits {
+    list-style: none;
+    padding: 0;
+}
+
+.investment-benefits li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Commercial Options */
+.commercial-options {
+    list-style: none;
+    padding: 0;
+}
+
+.commercial-options li {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* Horizontal Line */
+.investment-divider {
+    margin: 30px 0;
+    border: 1px solid white;
+}
+
+/* Contact Information */
+.contact-info1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .investment-hub {
+        padding: 30px 15px;
+    }
+
+    .investment-title {
+        font-size: 22px;
+    }
+
+    .investment-subtitle {
+        font-size: 20px;
+    }
+
+    .investment-text, .investment-benefits li, .commercial-options li {
         font-size: 14px;
     }
 }
